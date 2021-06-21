@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
          * ����һ��js�����ӿڣ�����html�����ļ��е�javascript���������̨java����ֱ�ӽ�������
          * "contact"Ϊ���ö���ȡ�ñ��� ��Ӧandroid.html�е�contact
          */
-        webViewIndex.addJavascriptInterface(new WeveBridge(this, webview), "WeveBridge");
+        webview.addJavascriptInterface(new WeveBridge(this, webview), "WeveBridge");
 //        webViewIndex.setWebContentsDebuggingEnabled(true);
     }
 
